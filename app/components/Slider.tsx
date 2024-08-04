@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const slidesData = [
   {
@@ -42,9 +42,21 @@ const slidesData = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
 
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='h-[calc(100vh-80px)] overflow-hidden'>
-      <div className='w-max h-full flex transition-all ease-in-out duration-700' style={{transform: `translateX(-${current * 100}vw)`}}>
+      <div
+        className='w-max h-full flex transition-all ease-in-out duration-700'
+        style={{ transform: `translateX(-${current * 100}vw)` }}
+      >
         {slidesData.map((slide) => (
           <div
             className={`${slide.bg} w-screen h-full flex flex-col gap-16 lg:flex-row`}
