@@ -1,7 +1,9 @@
+import Slider from './components/Slider';
+
 const HomePage = () => {
   return (
     <div className=''>
-      <h1 className='font-bold'>Welcome to my eStore</h1>
+      <h1 className='font-bold'><Slider /></h1>
     </div>
   );
 };

@@ -23,12 +23,12 @@ const Navbar = () => {
             <PiLastfmLogoFill className='text-[30px] md:text-[45px]' />
             <div className='text-2xl tracking-wide uppercase'>Sterilo</div>
           </Link>
-          <div className='hidden md:flex gap-4'>
+          <div className='hidden xl:flex gap-4'>
             <Link href='/'>Homepage</Link>
+            <Link href='/'>Shop</Link>
+            <Link href='/'>Deals</Link>
             <Link href='/'>About</Link>
             <Link href='/'>Contact</Link>
-            <Link href='/'>Logout</Link>
-            <Link href='/'>Cart(1)</Link>
           </div>
         </div>
         {/* right */}
