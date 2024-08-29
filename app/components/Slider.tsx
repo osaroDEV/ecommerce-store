@@ -43,7 +43,6 @@ const Slider = () => {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
     }, 6000);
@@ -59,8 +58,8 @@ const Slider = () => {
       >
         {slidesData.map((slide) => (
           <div
-            className={`${slide.bg} w-screen h-full flex flex-col gap-16 lg:flex-row`}
             key={slide.id}
+            className={`${slide.bg} w-screen h-full flex flex-col gap-16 lg:flex-row`}
           >
             {/* text */}
             <div className='h-1/2 lg:w-1/2 xl:h-full flex flex-col items-center justify-center gap-8 2xl:gap-12 text-center'>
