@@ -25,7 +25,7 @@ const ProductImages = () => {
   const [main, setMain] = useState(0);
 
   return (
-    <div className=''>
+    <div className='my-16'>
       <div className='h-[500px] relative'>
         <Image
           src={images[main].url}

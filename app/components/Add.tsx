@@ -23,14 +23,14 @@ const Add = () => {
       <h4 className='font-medium mb-12'>Choose Quantity</h4>
       <div className='flex flex-row justify-between items-center'>
         <div className='flex flex-row justify-between items-center gap-6'>
-          <div className='bg-gray-100 px-4 py-2 rounded-3xl flex items-center justify-between w-32 select-none'>
+          <div className='bg-gray-100 px-4 py-2 rounded-3xl flex items-center justify-between w-32 select-none cursor-pointer'>
             <FaMinus
-              className='cursor-pointer text-xl'
+              className='cursor-pointer'
               onClick={() => handleQuantity('dec')}
             />
-            <span className='text-2xl'>{quantity}</span>
+            <span className='text-xl'>{quantity}</span>
             <FaPlus
-              className='cursor-pointer text-xl'
+              className='cursor-pointer'
               onClick={() => handleQuantity('inc')}
             />
           </div>

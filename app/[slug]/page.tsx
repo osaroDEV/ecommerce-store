@@ -1,11 +1,10 @@
-import React from 'react';
 import ProductImages from '../components/ProductImages';
 import CustomizeProduct from '../components/CustomizeProduct';
 import Add from '../components/Add';
 
 const SinglePage = () => {
   return (
-    <div className='px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative flex flex-col lg:flex-row gap-16'>
+    <div className='my-20 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative flex flex-col lg:flex-row gap-16'>
       {/* image */}
       <div className='w-full lg:w-1/2 lg:sticky top-20 h-max'>
         <ProductImages />
